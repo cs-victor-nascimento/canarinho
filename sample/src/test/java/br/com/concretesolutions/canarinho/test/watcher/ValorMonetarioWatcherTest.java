@@ -1,5 +1,6 @@
 package br.com.concretesolutions.canarinho.test.watcher;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.support.design.widget.TextInputLayout;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ public class ValorMonetarioWatcherTest {
     private EditText editText;
 
     @Before
+    @SuppressLint("SetTextI18n")
     public void setUp() {
         final ActivityController<Activity> activityController = buildActivity(Activity.class);
         final Activity activity = activityController.create().get();
